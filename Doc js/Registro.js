@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             alert('¡Registro exitoso!');
         }
-        
-        // Si las validaciones pasan, se puede continuar con el envío del formulario
-        // En un proyecto real, aquí iría el código para enviar los datos al servidor
-        // formulario.submit(); // Descomenta esta línea para enviar el formulario
+            
     });
 });
