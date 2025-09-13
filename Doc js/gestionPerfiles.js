@@ -18,14 +18,6 @@ class Perfil {
         }
     }
 
-    loadUserData() {
-        const userData = this.getUserData();
-        
-        if (userData) {
-            this.fillFormData(userData);
-        }
-    }
-
     getUserData() {
         const userData = localStorage.getItem('levelUpGamerUser');
         if (userData) {
@@ -64,7 +56,6 @@ class Perfil {
             metodoPago: document.getElementById('metodo-pago').value
         };
 
-        // Validaciones básicas (sin validación de email)
         if (!formData.nombre.trim()) {
             this.showAlert('Error', 'El nombre es obligatorio', 'error');
             return;
@@ -74,10 +65,6 @@ class Perfil {
             this.showAlert('Error', 'El apellido es obligatorio', 'error');
             return;
         }
-
-        // Guardar en localStorage
-        localStorage.setItem('levelUpGamerUser', JSON.stringify(formData));
-        this.showAlert('Éxito', 'Perfil actualizado correctamente', 'success');
     }
 
     showAlert(titulo, mensaje, tipo) {
@@ -87,18 +74,5 @@ class Perfil {
         
         modalTitulo.textContent = titulo;
         modalMensaje.textContent = mensaje;
-        
-        // Cambiar color del header según el tipo
-        const modalHeader = document.querySelector('#modalConfirmacion .modal-header');
-        modalHeader.className = 'modal-header';
-        if (tipo === 'error') {
-            modalHeader.classList.add('bg-danger', 'text-white');
-        } else if (tipo === 'success') {
-            modalHeader.classList.add('bg-success', 'text-white');
-        } else {
-            modalHeader.classList.add('bg-primary', 'text-white');
-        }
-        
-        modal.show();
     }
 }
