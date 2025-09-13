@@ -1,0 +1,8 @@
+.custom-background {
+    background-image: url('../imagenes/bga.gif');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}

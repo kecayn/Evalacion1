@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Level-up gamer</title>
+    <title>Busqueda - Level-up gamer</title>
     <link href="../Doc css/index.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
@@ -53,7 +53,7 @@
                 </div>
                 <!-- Botones para  buscar y limpiar -->
                 <div class="text-center mt-4">
-                    <button type="button" class="btn btn-primary" onclick="window.location.href='busqueda.html'">Buscar</button>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
                     <button type="reset" class="btn btn-secondary">Limpiar filtros</button>
                 </div>
             </form>
@@ -61,12 +61,23 @@
     </div>
 </div>
 
-    <div class="container mt-5 text-center">
-      <h1>Bienvenido a Level-up gamer</h1>
-      <img src="/imagenes/Control level-up.jpeg" class="img-thumbnail" alt="">
-      
-      <p>Explora un mundo de juegos y accesorios. ¡Únete a nuestra comunidad hoy mismo!</p>
+    <!-- Item de tienda -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../imagenes/control.png" class="card-img-top" alt="Control PS5">
+            <div class="card-body">
+              <h5 class="card-title">Control DualSense PS5</h5>
+              <p class="card-text">Control inalámbrico oficial para PlayStation 5 con retroalimentación háptica y gatillos adaptativos.</p>
+              <p class="card-text"><strong>$69.99</strong></p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
