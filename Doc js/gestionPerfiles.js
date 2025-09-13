@@ -55,15 +55,5 @@ class Perfil {
             presupuesto: document.getElementById('presupuesto').value,
             metodoPago: document.getElementById('metodo-pago').value
         };
-
-        if (!formData.nombre.trim()) {
-            this.showAlert('Error', 'El nombre es obligatorio', 'error');
-            return;
-        }
-
-        if (!formData.apellido.trim()) {
-            this.showAlert('Error', 'El apellido es obligatorio', 'error');
-            return;
-        }
     }
 }
