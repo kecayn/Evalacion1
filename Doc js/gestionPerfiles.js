@@ -66,13 +66,4 @@ class Perfil {
             return;
         }
     }
-
-    showAlert(titulo, mensaje, tipo) {
-        const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
-        const modalTitulo = document.getElementById('modalTitulo');
-        const modalMensaje = document.getElementById('modalMensaje');
-        
-        modalTitulo.textContent = titulo;
-        modalMensaje.textContent = mensaje;
-    }
 }
